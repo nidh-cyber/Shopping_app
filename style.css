@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: rgb(224, 223, 223);
+}
+/* **************Top Navigation Bar***************** */
+.top-nav{
+    height: 60px;
+    background-color: #19181a;
+    display: flex;
+    color: rgb(247, 241, 241);
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    /* top: 0; */
+    width: 100%;
+    z-index: 1;
+}
+.nav-logo{
+    width: 115px;
+    padding: 12px;
+}
+.nav-logo img{
+    width: 100%;
+}
+.border{
+    border: 1px solid transparent;
+    padding: 6px 7px;
+}
+.border:hover{
+    border: 1px solid rgb(250, 243, 243);
+    border-radius: 4px;
+}
+/* **************Location box******************** */
+.nav-location{
+    padding-right: 2px;
+}
+.location-icon{
+    display: flex;
+    align-items: center;
+}
+.location-first{
+    margin-left: 12px;
+    color: rgb(240, 226, 226);
+    font-size: 0.9vw;
+    /* vw is responsive unit to chsnge font size according to screen size */
+}
+.location-second{
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+.location-icon i{
+    font-size: 1.2vw;
+    padding-right: 2px;
+}
+/* *************Search Box************************ */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    height: 40px;
+    width: 600px;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 5px;
+    /* padding-left: 10px; */
+}
+.nav-search:hover{
+    border: 2px solid orange;
+    
+}
+.category{
+    width: 52px;
+    text-align: center;
+    font-size: 1vw;
+    border: 0;
+    /* use of broder here? */
+    outline: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #f7f2f2;
+}
+.search-input{
+    width: 100%;
+    padding-left: 5px;
+    font-size: 1.2vw;
+    border: 0;
+    outline: none;
+}
+.search-icon{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    /* used for aligning items in y-axis */
+    justify-content: center;
+    /* used for aligning items in x-axis */
+    color: black;
+    font-size: 1.5vw;
+    background-color: rgb(228, 146, 69);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/* ***************Language Box****************************** */
+.nav-language{
+    width: auto;
+}
+.lang-select{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    color: white;
+    width: 42px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1vw;
+}
+.lang-select img{
+    width: 28px;
+}
+/* **************signin*************************** */
+.nav-sigin{
+    padding: 1px;
+}
+.first-signin{
+    color: #ccc;
+    font-size: 0.9vw;
+
+}
+.second-signin{
+    font-size: 1vw;
+    font-weight: 500;
+}
+/* *********************Cart Box************************* */
+.nav-cart{
+    display: flex;
+    align-items: center;
+}
+.nav-cart i{
+    font-size: 1.2vw;
+    margin-right: 4px;
+    color: red;
+}
+.nav-cart p{
+    font-size: 1vw;
+    font-weight: 500;
+}
+/* ***************Bottom Navigation Bar*********************** */
+.bottom-nav{
+    background-color: #474d52;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 20px;
+    position: relative;
+    top: 60px;
+}
+.bnav-left{
+    display: flex;
+    align-items: center;
+}
+.options{
+    display: flex;
+}
+.bnav-left .all{
+    display: flex;
+    align-items: center;
+}
+.bnav-left .all p{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+.bnav-left .all i{
+    font-size: 1.5vw;
+    margin-right: 4px;
+    color: greenyellow;
+}
+.bnav-left .options a{
+    text-decoration: 1.2vw ;
+    font-size: 1.1vw;
+    margin: 0 6px;
+}
+
+.bnav-right{
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+/* ************Hero image************************************ */
+.hero-section{
+    background-image: url(hero-image.jpg);
+    height: 280px;
+    /* width: 100%; */
+    margin-top: 60px;
+}
+.products-box{
+    width: 96%;
+    /* display: flex;
+    align-items: center; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr)); 
+    /* repeat-to create multiple columns  */
+    /* auto-fit- to automatically adjusts the number of columns to fit in available space  */
+    /* ensures col has min width of 300px & max width of 1 fractional unit;it takes up remaining space  */
+    gap: 20px;
+}
+.box{
+    background: white;
+    height: auto;
+    padding: 20px;
+
+}
+.box img{
+    width: 100%;
+}
+h3{
+    margin-bottom: 20px;
+}
+.box a{
+    text-decoration: none;
+    font-size: 1.3vw;
+    margin-top: 20px;
+    color: rgb(83, 79, 100);
+}
+.scroll-product{
+    width: 96%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+
+}
+.scroll-product .products{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: auto;
+}
+.products::-webkit-scrollbar{
+    height: 6px;
+    cursor: pointer;
+    /* background: grey; */
+}
+.products::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: transparent;
+}
+.products::-webkit-scrollbar-thumb:hover{
+    background: gray;
+}
+.products img{
+    width: 200px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+/* *****************flightsection**************************** */
+.flight-offer{
+    background: white;
+    width: 96%;
+    margin: 20px auto;
+    padding: 20px;
+}
+.flight-offer img{
+    width: 100%;
+}
+
+/* ************signin section***************************** */
+.signin-section{
+    width: 100%;
+    background: #fff;
+    margin: 20px 0;
+    padding: 30px 0;
+}
+.signin-section .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 30px 0;
+}
+.signin-section .content p{
+    font-size: 1vw;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.signin-section .content button{
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 12px 40px;
+    background: rgb(228, 176, 64);
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    width: 300px;
+}
